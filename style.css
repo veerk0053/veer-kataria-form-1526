@@ -1,0 +1,242 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: #F5F5F5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+}
+
+.wrapper {
+    max-width: 50rem;
+    width: 100%;
+    padding: 20px;
+    background-color: #e1e0e0; 
+    border: 1px solid #bcbbbb; 
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.contactform {
+    margin-bottom: 20px;
+}
+
+form legend {
+    font-size: 2rem; 
+    margin-bottom: 10px;
+    padding-bottom: 10px; 
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: #DDD;
+}
+
+
+.questions{
+    font-weight: 700;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(204 204 204);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(204 204 204);
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+    font-weight: 500;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(204 204 204);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="submit"] {
+    font-size: 1rem;
+    background-color: #6495ED;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: black;
+    color: whitesmoke;
+    background-color: #2c4798;
+}
+
+
+/* mobile  */
+@media (min-width: 25rem) and (max-width: 40rem) {
+    .formcontainer {
+      padding: 24px;
+    }
+
+    .buttons {
+        padding: 8px;
+        margin: 8px;
+    }
+
+    .formstyle {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "F E"
+            "M M"
+            "B B";
+    }
+
+    .fullnamediv {
+        grid-area: F;
+        padding: 8px;
+        margin: 8px;
+    }
+
+    .emaildiv  {
+        grid-area: E;
+        padding: 8px;
+        margin: 8px;
+    }
+
+    .messagediv  {
+        grid-area: M;
+        padding: 8px;
+        margin: 8px;
+    }
+
+    #submit-button {
+        grid-area: B;
+        padding: 8px;
+        margin: 8px;
+    }
+
+
+  }
+  /* desktop  */
+  @media (min-width: 40rem) and (max-width: 50rem) {
+
+    .buttons {
+        padding: 8px;
+        margin: 8px;
+    }
+    .formstyle {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "F E"
+            "M M"
+            "B B";
+    }
+
+    .fullnamediv {
+        grid-area: F;
+        padding: 8px;
+        margin: 8px;
+    }
+
+    .emaildiv  {
+        grid-area: E;
+        padding: 8px;
+        margin: 8px;
+    }
+
+    .messagediv  {
+        grid-area: M;
+        padding: 8px;
+        margin: 8px;
+    }
+
+    #submit-button {
+        grid-area: B;
+        padding: 8px;
+        margin: 8px;
+    }
+
+    .formcontainer {
+        padding: 24px;
+        margin: auto;
+      }
+  }
+  
+  /* desktop */
+  @media (min-width: 50rem) {
+    .buttons {
+        padding: 8px;
+        margin: 8px;
+    }
+
+    .formstyle {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "F E"
+            "M M"
+            "B B";
+    }
+
+    .fullnamediv {
+        grid-area: F;
+        padding: 8px;
+        margin: 8px;
+    }
+
+    .emaildiv  {
+        grid-area: E;
+        padding: 8px;
+        margin: 8px;
+    }
+
+    .messagediv  {
+        grid-area: M;
+        padding: 8px;
+        margin: 8px;
+    }
+
+    #submit-button {
+        grid-area: B;
+        padding: 8px;
+        margin: 8px;
+    }
+  }
